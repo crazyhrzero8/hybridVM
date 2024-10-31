@@ -236,5 +236,5 @@ $  ngspice pre_enable.cir
 
 ## Contact Information
 
+- Biplab Das S, biplabdas2001.bd@gmail.com
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
-
