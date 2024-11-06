@@ -222,7 +222,8 @@ $  ngspice pre_enable.cir
 ## Acknowledgments
 
 
-- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. [for Hackathon opportunity]
+- Sumanto Kar, Assistant Project Manager, IIT Bombay. [for Open Source Tools support]
 
 
 ## Contact Information
