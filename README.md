@@ -11,7 +11,7 @@ The principles of generation, Implementation, Issues & Improvements, Conclusion,
 **Upload your paper on Github and give a link to it**
 
 ## Block Diagram of the Hybrid Vedic Multiplier
-![img](https://github.com/user-attachments/assets/a22b39d2-0237-4892-9a99-26f331cc605e](https://github.com/crazyhrzero8/hybridVM/blob/main/Images/Initial_Stage1/block_4b_VM.png)
+![image](https://github.com/crazyhrzero8/hybridVM/blob/main/Images/Initial_Stage1/block_4b_VM.png)
 
 
 
