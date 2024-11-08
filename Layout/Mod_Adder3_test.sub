@@ -1,0 +1,12 @@
+* Subcircuit Mod_Adder3_test
+.subckt Mod_Adder3_test /z3 /gnd /s7 /z2 /s6 /c1 /z1 /s5 /p3 /z0 /p2 /s4 
+* c:\fossee\esim\library\subcircuitlibrary\mod_adder3_test\mod_adder3_test.cir
+.include FA_test.sub
+.include HA_test.sub
+x4 net-_x3-pad5_ /z3 /s7 /gnd HA_test
+x1 /p2 /z0 /s4 net-_x1-pad4_ HA_test
+x3 /c1 /z2 net-_x2-pad5_ /s6 net-_x3-pad5_ FA_test
+x2 /p3 /z1 net-_x1-pad4_ /s5 net-_x2-pad5_ FA_test
+* Control Statements
+
+.ends Mod_Adder3_test

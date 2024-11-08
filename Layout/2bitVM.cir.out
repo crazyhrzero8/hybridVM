@@ -1,0 +1,20 @@
+* c:\fossee\esim\library\subcircuitlibrary\2bitvm\2bitvm.cir
+
+.include and_test.sub
+.include HA_test.sub
+x1 net-_x1-pad1_ net-_x1-pad2_ /p1 net-_x1-pad4_ HA_test
+x2 net-_x1-pad4_ net-_x2-pad2_ /p2 /p3 HA_test
+* u1  /a0 /b0 /a1 /b1 /p0 /p1 /p2 /p3 port
+x3 /a0 /a1 /p0 and_test
+x4 /a0 /b1 net-_x1-pad1_ and_test
+x5 /b0 /a1 net-_x1-pad2_ and_test
+x6 /b0 /b1 net-_x2-pad2_ and_test
+.tran 1e-12 10e-09 0e-12
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

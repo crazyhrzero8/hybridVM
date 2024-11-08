@@ -1,0 +1,21 @@
+* c:\fossee\esim\library\subcircuitlibrary\fa_test\fa_test.cir
+
+m1  net-_m1-pad1_ /a /b /vdd esim_mos_p
+m2  net-_m1-pad1_ /a net-_m2-pad3_ gnd esim_mos_n
+m6  /c net-_m1-pad1_ net-_m6-pad3_ gnd esim_mos_n
+m3  net-_m2-pad3_ /b gnd gnd esim_mos_n
+m7  net-_m6-pad3_ /c gnd gnd esim_mos_n
+m4  net-_m1-pad1_ /b /a /vdd esim_mos_p
+m5  /c net-_m1-pad1_ /c /vdd esim_mos_p
+m8  /c /c net-_m1-pad1_ /vdd esim_mos_p
+v1 /vdd gnd  dc 0
+* u1  /a /b /c /c /c port
+.tran 1e-12 10e-09 0e-12
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

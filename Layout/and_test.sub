@@ -1,0 +1,15 @@
+* Subcircuit and_test
+.subckt and_test /a /b /y 
+* c:\fossee\esim\library\subcircuitlibrary\and_test\and_test.cir
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+m1 net-_m1-pad1_ /a /vdd /vdd CMOSP W=100u L=100u M=1
+m4 net-_m1-pad1_ /b /vdd /vdd CMOSP W=100u L=100u M=1
+m6 /y net-_m1-pad1_ /vdd /vdd CMOSP W=100u L=100u M=1
+m2 net-_m1-pad1_ /a net-_m2-pad3_ gnd CMOSN W=100u L=100u M=1
+m3 net-_m2-pad3_ /b gnd gnd CMOSN W=100u L=100u M=1
+m5 /y net-_m1-pad1_ gnd gnd CMOSN W=100u L=100u M=1
+v1 gnd /vdd  dc 1
+* Control Statements
+
+.ends and_test

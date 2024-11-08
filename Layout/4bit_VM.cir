@@ -1,0 +1,26 @@
+* C:\Users\USER\OneDrive\Documents\projects\4bit_VM\4bit_VM.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 8/11/2024 10:33:01 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+x1  /a2 /b2 /a3 /b3 Net-_x1-Pad5_ Net-_x1-Pad6_ Net-_x1-Pad7_ Net-_x1-Pad8_ 2bVM_blk		
+x3  /a2 /b0 /a3 /b1 Net-_x3-Pad5_ Net-_x3-Pad6_ Net-_x3-Pad7_ Net-_x3-Pad8_ 2bVM_blk		
+x6  /a0 /b2 /a1 /b3 Net-_x4-Pad1_ Net-_x4-Pad3_ Net-_x4-Pad5_ Net-_x4-Pad7_ 2bVM_blk		
+x7  /a0 /b0 /a1 /b1 /s0 /s1 Net-_x5-Pad6_ Net-_x5-Pad4_ 2bVM_blk		
+x4  Net-_x4-Pad1_ Net-_x3-Pad5_ Net-_x4-Pad3_ Net-_x3-Pad6_ Net-_x4-Pad5_ Net-_x3-Pad7_ Net-_x4-Pad7_ Net-_x3-Pad8_ Net-_x4-Pad9_ Net-_x4-Pad10_ Net-_x4-Pad11_ Net-_x4-Pad12_ Net-_x2-Pad5_ Mod_Adder1_blk		
+x5  Net-_x4-Pad12_ Net-_x4-Pad11_ Net-_x4-Pad10_ Net-_x5-Pad4_ Net-_x4-Pad9_ Net-_x5-Pad6_ /s2 /s3 Net-_x2-Pad1_ Net-_x2-Pad3_ Net-_U1-Pad18_ Mod_Adder2_blk		
+x2  Net-_x2-Pad1_ Net-_x1-Pad5_ Net-_x2-Pad3_ Net-_x1-Pad6_ Net-_x2-Pad5_ Net-_x1-Pad7_ Net-_x1-Pad8_ /s4 /s5 /s6 /s7 Net-_U1-Pad17_ Mod_Adder3_blk		
+U1  /b3 /b2 /s7 /s6 /s5 /b1 /s4 /b0 /s3 /a3 /s2 /a2 /a1 /s1 /a0 /s0 Net-_U1-Pad17_ Net-_U1-Pad18_ PORT		
+I1  /a0 GND dc		
+I2  /a1 GND dc		
+I3  /a2 GND dc		
+I4  /a3 GND dc		
+I5  /b0 GND dc		
+I6  /b1 GND dc		
+I7  /b2 GND dc		
+I8  /b3 GND dc		
+
+.end

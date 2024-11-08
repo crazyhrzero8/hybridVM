@@ -1,0 +1,18 @@
+* c:\fossee\esim\library\subcircuitlibrary\mod_adder2_test\mod_adder2_test.cir
+
+.include FA_test.sub
+.include HA_test.sub
+x0 net-_x0-pad1_ /f3 /p3 /gnd HA_test
+x1 net-_x1-pad1_ /f2 /p2 net-_x0-pad1_ HA_test
+x3 /w2 /f0 /s2 net-_x2-pad1_ HA_test
+x2 net-_x2-pad1_ /w3 /f1 /s3 net-_x1-pad1_ FA_test
+* u1  /gnd /f3 /p3 /f2 /p2 /f1 /w3 /s3 /f0 /s2 /w2 port
+.tran 1e-12 10e-09 0e-12
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

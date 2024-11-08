@@ -1,0 +1,15 @@
+* C:\FOSSEE\eSim\library\SubcircuitLibrary\Mod_Adder2_test\Mod_Adder2_test.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 8/11/2024 7:24:06 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X0  Net-_X0-Pad1_ /f3 /p3 /gnd HA_blk		
+X1  Net-_X1-Pad1_ /f2 /p2 Net-_X0-Pad1_ HA_blk		
+X3  /w2 /f0 /s2 Net-_X2-Pad1_ HA_blk		
+X2  Net-_X2-Pad1_ /w3 /f1 /s3 Net-_X1-Pad1_ FA_blk		
+U1  /gnd /f3 /p3 /f2 /p2 /f1 /w3 /s3 /f0 /s2 /w2 PORT		
+
+.end

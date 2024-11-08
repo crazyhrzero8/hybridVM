@@ -1,0 +1,18 @@
+* c:\fossee\esim\library\subcircuitlibrary\modadd1_test\modadd1_test.cir
+
+.include FA_test.sub
+.include HA_test.sub
+x1 /x0 /y0 /f0 net-_x1-pad4_ HA_test
+x3 /x1 /y1 net-_x1-pad4_ /f1 net-_x2-pad3_ FA_test
+x2 /x2 /y2 net-_x2-pad3_ /f2 net-_x0-pad3_ FA_test
+x0 /x3 /y3 net-_x0-pad3_ /f3 /c1 FA_test
+* u1  /y3 /c1 /x3 /f3 /y2 /f2 /x2 /y1 /f1 /x1 /y0 /f0 /x0 port
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end
