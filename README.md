@@ -8,7 +8,7 @@
 In this era, energy efficiency is critical, so in the semiconductor field, approaches from Moore’s law of transistors deal with the best attributes, creating a question in future power and area. In this work, the assumption of getting an increased throughput is more likely to be essential in this research, improving the processor’s core. This paper talks discusses the feasibility of the so-called efficiency in power, area, and speed in the hybrid 4-bit Vedic multiplier using the ancient algorithm called Urdhva Tiryakbhayam Sutra. The entire design is implemented using the SkyWater 130nm pdk node files containing various methodologies like GDI, PTL, and DPL in CMOS structure. 
 The principles of generation, Implementation, Issues & Improvements, Conclusion, and Future Scope will be discussed further
 
-**Upload your paper on Github and give a link to it**
+**[LINK](https://github.com/crazyhrzero8/hybridVM/blob/main/Documentations/Stage%202%20pdf/Stage2_4bVM.pdf) to the paper on GitHub**
 
 ## Block Diagram of the Hybrid Vedic Multiplier
 ![image](https://github.com/crazyhrzero8/hybridVM/blob/main/Images/Initial_Stage1/block_4b_VM.png)
